@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "7177948497",
+    "project_id": "ecpay-test-wkil4q",
+    "storage_bucket": "ecpay-test-wkil4q.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7177948497:android:c6708e07b960049dd6d770",
+        "android_client_info": {
+          "package_name": "com.d2e.ecpaytest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxRbKzy_kqB6FCBBC-vJX38UETO2He4GA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
