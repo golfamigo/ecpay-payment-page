@@ -111,9 +111,7 @@ class _NavBarPageState extends State<NavBarPage> {
   Widget build(BuildContext context) {
     final tabs = {
       'checkout': const CheckoutWidget(),
-      'insidePay': const InsidePayWidget(),
       'action': const ActionWidget(),
-      'ecpayTest': const EcpayTestWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -142,26 +140,10 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_outlined,
-              size: 24.0,
-            ),
-            label: 'Home',
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
               Icons.attractions_sharp,
               size: 24.0,
             ),
             label: 'Home',
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.eleven_mp_outlined,
-              size: 24.0,
-            ),
-            label: 'ecpayTest',
             tooltip: '',
           )
         ],

@@ -64,25 +64,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
               : const CheckoutWidget(),
         ),
         FFRoute(
-          name: 'insidePay',
-          path: '/insidePay',
-          builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'insidePay')
-              : const InsidePayWidget(),
-        ),
-        FFRoute(
           name: 'action',
           path: '/action',
           builder: (context, params) => params.isEmpty
               ? const NavBarPage(initialPage: 'action')
               : const ActionWidget(),
-        ),
-        FFRoute(
-          name: 'ecpayTest',
-          path: '/ecpayTest',
-          builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'ecpayTest')
-              : const EcpayTestWidget(),
         ),
         FFRoute(
           name: 'webView',
