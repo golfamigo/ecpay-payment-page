@@ -124,6 +124,10 @@ class _ActionWidgetState extends State<ActionWidget> {
                                           .merchantTradeNo,
                                       ParamType.String,
                                     ),
+                                    'merchantID': serializeParam(
+                                      '3002607',
+                                      ParamType.String,
+                                    ),
                                   }.withoutNulls,
                                 );
                               }
@@ -193,7 +197,7 @@ class _ActionWidgetState extends State<ActionWidget> {
                                 merchantID: '3002607',
                                 rememberCard: 1,
                                 paymentUIType: 2,
-                                choosePaymentList: '0',
+                                choosePaymentList: '1',
                                 orderInfo: OrderInfoStruct(
                                   merchantTradeDate: dateTimeFormat(
                                       'yyyy/MM/dd HH:mm:ss',
@@ -204,18 +208,20 @@ class _ActionWidgetState extends State<ActionWidget> {
                                         .substring(0, 14);
                                   }(getCurrentTimestamp.toString())}',
                                   totalAmount: 1000,
-                                  returnURL: 'https://pay.d2e.fun/receive',
+                                  returnURL: 'https://pay.d2e.fun/receive.php',
                                   tradeDesc: 'New Order',
                                   itemName: 'Soap',
                                 ),
                                 cardInfo: CardInfoStruct(
                                   redeem: '0',
-                                  orderResultURL: 'https://pay.d2e.fun/receive',
+                                  orderResultURL:
+                                      'https://pay.d2e.fun/receive.php',
                                   creditInstallment: '3,6,12',
                                   flexibleInstallment: '30',
                                 ),
                                 unionPayInfo: UnionPayInfoStruct(
-                                  orderResultURL: 'https://pay.d2e.fun/receive',
+                                  orderResultURL:
+                                      'https://pay.d2e.fun/receive.php',
                                 ),
                                 aTMInfo: ATMInfoStruct(
                                   expireDate: 3,

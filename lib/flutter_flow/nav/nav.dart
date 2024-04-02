@@ -82,6 +82,10 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
               'merchantTradeNo',
               ParamType.String,
             ),
+            merchantID: params.getParam(
+              'merchantID',
+              ParamType.String,
+            ),
           ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
